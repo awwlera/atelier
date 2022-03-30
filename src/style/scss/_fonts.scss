@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "old-standard";
+  src: url("../../fonts/old-standart/oldstandardtt-bold-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/old-standart/oldstandardtt-bold-webfont.woff")
+      format("woff"),
+    url("../../fonts/old-standart/oldstandardtt-bold-webfont.ttf")
+      format("truetype"),
+    url("../../fonts/old-standart/oldstandardtt-bold-webfont.svg#old_standard_ttbold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "old-standard";
+  src: url("../../fonts/old-standart/oldstandardtt-regular-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/old-standart/oldstandardtt-regular-webfont.woff")
+      format("woff"),
+    url("../../fonts/old-standart/oldstandardtt-regular-webfont.ttf")
+      format("truetype"),
+    url("../../fonts/old-standart/oldstandardtt-regular-webfont.svg#old_standard_ttregular")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}

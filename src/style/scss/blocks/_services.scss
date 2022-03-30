@@ -1,0 +1,34 @@
+.services {
+  padding: 120px 0 117px;
+
+  .services-card {
+    border: 1px solid $brown-border;
+    width: calc(100% / 3);
+    padding: 61px 117px 76px 61px;
+
+    .img-holder {
+      margin-bottom: 20px;
+
+      .services-img {
+        width: 60px;
+      }
+    }
+  }
+
+  .services-title {
+    display: block;
+    font-size: 24px;
+    color: $orange;
+    margin-bottom: 10px;
+  }
+
+  .services-sub-title {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .services-text {
+    font-size: 11px;
+  }
+}

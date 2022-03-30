@@ -1,0 +1,30 @@
+.footer {
+  .container {
+    padding: 21px 0;
+    border-top: 1px solid $brown-border;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-nav-list {
+      display: flex;
+
+      .footer-nav-item {
+        padding: 0 4px;
+        border-right: 1px solid $brown-border;
+
+        &:last-of-type {
+          border: none;
+        }
+      }
+    }
+
+    .footer-nav-link {
+      color: $orange;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

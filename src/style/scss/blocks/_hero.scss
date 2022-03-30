@@ -1,0 +1,42 @@
+.hero {
+  min-height: 602px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .text-holder {
+    max-width: 869px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    .pre-title {
+      color: $orange;
+      margin-bottom: 15px;
+    }
+
+    .hero-title {
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 80px;
+      letter-spacing: 1px;
+      color: $white;
+      margin-bottom: 35px;
+    }
+  }
+
+  .btn-hero {
+    background-color: $orange;
+    color: $black;
+    border: 1px solid $orange;
+
+    &:hover {
+      background-color: $black;
+      color: $orange;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
