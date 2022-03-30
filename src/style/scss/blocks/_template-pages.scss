@@ -2,16 +2,20 @@
   padding: 120px 0;
 
   .flex {
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .card {
     max-width: 387px;
-    width: 100%;
+    width: calc(100% / 3);
     border: 1px solid $brown-border;
-    padding: 31px;
-    margin-bottom: 20px;
+    padding: 25px 25px 41px;
+    margin: 0 10px 20px;
     background-color: $black;
+
+    @include breakpoint("lg") {
+      width: 50%;
+    }
 
     &:hover {
       transform: scale(1.2);

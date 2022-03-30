@@ -1,11 +1,12 @@
 .follow {
   .container {
+    padding: 21px 15px;
     border-top: 1px solid $brown-border;
     border-bottom: 1px solid $brown-border;
-    padding: 21px 0;
 
     .follow-column {
       display: flex;
+      width: calc(100% / 3);
 
       .picture-holder {
         position: relative;
@@ -13,7 +14,7 @@
         .icon-insta-mini {
           width: 50px;
           position: absolute;
-          top: -17%;
+          top: -15%;
           left: 38%;
         }
       }
@@ -26,7 +27,7 @@
       .link-holder {
         position: absolute;
         top: 10%;
-        left: -6%;
+        left: 0;
 
         .text-holder {
           .follow-me {
@@ -53,6 +54,7 @@
 
       .icon-insta-big {
         max-width: 200px;
+        margin: 0 auto;
       }
     }
   }

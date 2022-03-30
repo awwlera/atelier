@@ -1,5 +1,10 @@
 .header {
   padding: 14px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $black;
 
   .logo-holder {
     width: 75px;

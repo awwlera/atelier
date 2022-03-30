@@ -6,6 +6,10 @@
     width: calc(100% / 3);
     padding: 61px 117px 76px 61px;
 
+    @include breakpoint("xl") {
+      padding: 61px 61px 76px 61px;
+    }
+
     .img-holder {
       margin-bottom: 20px;
 

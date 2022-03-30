@@ -2,4 +2,7 @@
   min-height: 462px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include breakpoint("lg");
+  min-height: 400px;
 }
