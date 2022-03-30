@@ -5,9 +5,40 @@
   left: 0;
   right: 0;
   background-color: $black;
+  z-index: 10;
+
+  &.active {
+    .nav-holder {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .burger-btn {
+      span {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        bottom: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
 
   .logo-holder {
     width: 75px;
+
+    @include breakpoint("md") {
+      z-index: 11;
+    }
   }
 
   .nav-holder {
@@ -16,14 +47,46 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint("md") {
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      padding: 30px 0;
+      z-index: 10px;
+      background-color: $black;
+      transition: all ease-in-out 0.3s;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
   .nav-list {
     padding: 0 22px;
+
+    @include breakpoint("md") {
+      flex-direction: column;
+      margin: 0 0 40px;
+    }
   }
 
   .nav-item {
     padding: 0 20px;
+
+    @include breakpoint("md") {
+      padding: 0;
+      width: 100%;
+    }
+
+    a {
+      @include breakpoint("md") {
+        text-align: center;
+        display: block;
+        padding: 30px 0;
+      }
+    }
   }
 
   .nav-link {
@@ -44,6 +107,60 @@
     &:hover {
       background-color: $orange;
       color: $black;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+
+  .burger-btn {
+    display: none;
+
+    @include breakpoint("md") {
+      display: block;
+      position: absolute;
+      top: 23px;
+      right: 20px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 25px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $orange;
+      transition: all ease-in-out 0.3s;
+    }
+
+    &:after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $orange;
+      transition: all ease-in-out 0.3s;
+    }
+
+    span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $orange;
       transition: all ease-in-out 0.3s;
     }
   }

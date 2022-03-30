@@ -1,6 +1,10 @@
 .subscribe {
   padding: 125px 0 43px;
 
+  @include breakpoint("md") {
+    padding: 90px 0 40px;
+  }
+
   .container {
     max-width: 600px;
     width: 100%;

@@ -1,6 +1,10 @@
 .services {
   padding: 120px 0 117px;
 
+  @include breakpoint("md") {
+    padding: 100px 0 80px;
+  }
+
   .services-card {
     border: 1px solid $brown-border;
     width: calc(100% / 3);
@@ -8,6 +12,16 @@
 
     @include breakpoint("xl") {
       padding: 61px 61px 76px 61px;
+    }
+
+    @include breakpoint("lg") {
+      padding: 20px;
+    }
+
+    @include breakpoint("md") {
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto 20px;
     }
 
     .img-holder {

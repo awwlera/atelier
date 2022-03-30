@@ -4,9 +4,19 @@
     border-top: 1px solid $brown-border;
     border-bottom: 1px solid $brown-border;
 
+    &.flex {
+      @include breakpoint("md") {
+        justify-content: center;
+      }
+    }
+
     .follow-column {
       display: flex;
       width: calc(100% / 3);
+
+      @include breakpoint("md") {
+        display: none;
+      }
 
       .picture-holder {
         position: relative;

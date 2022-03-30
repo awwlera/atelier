@@ -25,6 +25,15 @@
       letter-spacing: 1px;
       color: $white;
       margin-bottom: 35px;
+
+      @include breakpoint("md") {
+        font-size: 55px;
+      }
+
+      @include breakpoint("xxs") {
+        font-size: 40px;
+        line-height: 40px;
+      }
     }
   }
 

@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  padding-top: 79px;
+  padding-top: 50px;
 }
 
 h1,
@@ -81,6 +81,14 @@ img {
   font-size: 60px;
   color: $orange;
   text-align: center;
+
+  @include breakpoint("sm") {
+    font-size: 54px;
+  }
+
+  @include breakpoint("xs") {
+    font-size: 38px;
+  }
 }
 
 .title-holder {

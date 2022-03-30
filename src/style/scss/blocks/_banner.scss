@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include breakpoint("lg");
-  min-height: 400px;
+  @include breakpoint("lg") {
+    min-height: 400px;
+  }
+
+  @include breakpoint("md") {
+    min-height: 350px;
+  }
 }

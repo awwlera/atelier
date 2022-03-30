@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @include breakpoint("xxs") {
+      justify-content: center;
+    }
+
     .footer-nav-list {
       display: flex;
 
