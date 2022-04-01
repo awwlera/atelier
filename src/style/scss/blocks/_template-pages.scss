@@ -16,6 +16,7 @@
     padding: 25px 25px 41px;
     margin: 0 10px 20px;
     background-color: $black;
+    transition: all ease-in 0.3s;
 
     @include breakpoint("lg") {
       width: 50%;
@@ -28,7 +29,6 @@
 
     &:hover {
       transform: scale(1.2);
-      transition: all ease-in-out 0.3s;
 
       .card-title {
         color: $orange;
